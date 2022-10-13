@@ -1,0 +1,19 @@
+List<char> k = new List<char>();
+        k= s.ToCharArray().ToList();
+        long cnt = 0;
+        int x = k.Count;
+        if(n>x){
+            for(int i = 0 ; i < x ; i++){
+                if(k[i]=='a') cnt++;
+                }
+            cnt*=n/x;
+            for(int i = 0 ; i < n%x ; i++ ){
+                if(k[i]=='a') cnt++;
+            }
+        }
+        else{
+            for(int i = 0 ; i < n%x ; i++ ){
+                if(k[i]=='a') cnt++;
+            }
+        }
+        return cnt;

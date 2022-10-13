@@ -1,0 +1,17 @@
+    {
+        long cost = -1;
+        long btw = bc+z;
+        long wtb = wc+z;
+        long bcs = bc*b;
+        long wcs= wc*w;
+        if(btw<wc){
+            cost = btw*w + bcs;
+        }
+        else if(wtb<bc){
+            cost = wtb*b + wcs;
+            }
+        else{
+            cost = wcs + bcs;
+        }
+        return cost;
+    }
